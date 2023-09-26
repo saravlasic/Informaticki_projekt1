@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet'>
+		<title> Dream </title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link href="Galerija.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active" >
+							<a class="nav-link" href="Dream.html">Naslovnica</a>
+						</li>
+			
+						<li class="nav-item" >
+								<a class="nav-link" href="O nama.html">O nama</a>
+						</li>
+			
+						<li class="nav-item" >
+								<a class="nav-link" href="Galerija.html">Galerija</a>
+						</li>
+			
+						<li class="nav-item" >
+								<a class="nav-link" href="Kako do nas.html">Kako do nas?</a>
+						</li>
+			
+						<li class="nav-item" >
+								<a class="nav-link" href="Kontakt.html">Rezervacija</a>
+						</li>
+					</ul>
+			
+					<form class="form-inline">
+						<input id="search" class="form-control mr-sm-2" type="search" placeholder="Pretrazite..." aria-label="search">
+						<button id="search_button" class="btn btn-dark my-sm-0" type="submit">Trazi</button>
+					</form>
+				</div>
+			</div>
+			</nav>
+			
+		
+			<div class="container">
+				<img src="https://www.itl.cat/pngfile/big/284-2846852_wallpaper-snow-winter-trees-winter-landscape-snowy-snow.jpg" alt="Blidinje" style="width:100%;">
+				<div class="content">
+					<h1 class="display-2" style="font-family: Arizonia"> Holliday Home "Snjeguljica"</h1>
+					<h5 style="font-family: Arizonia"><marquee>Vas bijeg od stvarnosti</marquee></h5>
+				</div>
+			</div>
+		<br> <br> <br>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+		<div class="w3-content w3-display-container" class="container1">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje22-1170x878.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje09.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje20.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje14.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje01.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje13.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje04.jpg" style="width:100%" height="60%">
+			<img class="mySlides" src="http://blidinje.net/wp-content/uploads/2019/12/23122019-VILA-SNJEGULJICA-blidinje07.jpg" style="width:100%" height="60%">
+			
+			<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+
+	</body>
+</html>
